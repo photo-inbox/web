@@ -1,0 +1,95 @@
+{
+  "configVersion": 1,
+  "timestamp": 1657292075634,
+  "index": "https://photo-inbox.github.io/web/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "https://photo-inbox.github.io/web/430.3b3231c4fbaa95af.js",
+        "https://photo-inbox.github.io/web/790.1d091b23a7ce94fc.js",
+        "https://photo-inbox.github.io/web/favicon.ico",
+        "https://photo-inbox.github.io/web/index.html",
+        "https://photo-inbox.github.io/web/main.5ecf3d6075c84b85.js",
+        "https://photo-inbox.github.io/web/manifest.webmanifest",
+        "https://photo-inbox.github.io/web/polyfills.e976318bf0f75c1f.js",
+        "https://photo-inbox.github.io/web/runtime.82c8b4f9a0a1ebae.js",
+        "https://photo-inbox.github.io/web/styles.d264ca6879d7813d.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "https://photo-inbox.github.io/web/assets/i18n/en.json",
+        "https://photo-inbox.github.io/web/assets/icons/icon-128x128.png",
+        "https://photo-inbox.github.io/web/assets/icons/icon-144x144.png",
+        "https://photo-inbox.github.io/web/assets/icons/icon-152x152.png",
+        "https://photo-inbox.github.io/web/assets/icons/icon-192x192.png",
+        "https://photo-inbox.github.io/web/assets/icons/icon-384x384.png",
+        "https://photo-inbox.github.io/web/assets/icons/icon-512x512.png",
+        "https://photo-inbox.github.io/web/assets/icons/icon-72x72.png",
+        "https://photo-inbox.github.io/web/assets/icons/icon-96x96.png",
+        "https://photo-inbox.github.io/web/assets/scss/abstract/_variables.scss",
+        "https://photo-inbox.github.io/web/assets/scss/base/_reset.scss",
+        "https://photo-inbox.github.io/web/assets/scss/main.scss",
+        "https://photo-inbox.github.io/web/assets/scss/themes/_dark.scss"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "https://photo-inbox.github.io/web/430.3b3231c4fbaa95af.js": "bd18da491b18ad13904e9e752670881e54e9a7cc",
+    "https://photo-inbox.github.io/web/790.1d091b23a7ce94fc.js": "9a673bfaf39282e6de8bbcae5061f2697e4a18f1",
+    "https://photo-inbox.github.io/web/assets/i18n/en.json": "16ce2fddd507e7c9c403cc04ebaf34e1e3f0bf61",
+    "https://photo-inbox.github.io/web/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
+    "https://photo-inbox.github.io/web/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
+    "https://photo-inbox.github.io/web/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
+    "https://photo-inbox.github.io/web/assets/icons/icon-192x192.png": "1abd80d431a237a853ce38147d8c63752f10933b",
+    "https://photo-inbox.github.io/web/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
+    "https://photo-inbox.github.io/web/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
+    "https://photo-inbox.github.io/web/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
+    "https://photo-inbox.github.io/web/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
+    "https://photo-inbox.github.io/web/assets/scss/abstract/_variables.scss": "3671cbf105be721654f805d137e1ce46ca478026",
+    "https://photo-inbox.github.io/web/assets/scss/base/_reset.scss": "461ed8f31ce4290178fbea176b77b12ab8bd4eda",
+    "https://photo-inbox.github.io/web/assets/scss/main.scss": "0716de716e8b816ad8b3d246575ff598fbafcc61",
+    "https://photo-inbox.github.io/web/assets/scss/themes/_dark.scss": "9222a6164c8528b557b8d0cad9e8e09f205114ba",
+    "https://photo-inbox.github.io/web/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
+    "https://photo-inbox.github.io/web/index.html": "6b1c59e9d6ea231d9e0744456f8e408b241ba571",
+    "https://photo-inbox.github.io/web/main.5ecf3d6075c84b85.js": "c8b7b6c3d51d7bf04a43aa5fd23c862f3122a846",
+    "https://photo-inbox.github.io/web/manifest.webmanifest": "3ffafe5eb2e263944979568e68a76b753f283288",
+    "https://photo-inbox.github.io/web/polyfills.e976318bf0f75c1f.js": "d71e5d3abdfbd2f7aacd6ab5e2b15c6438c516d2",
+    "https://photo-inbox.github.io/web/runtime.82c8b4f9a0a1ebae.js": "6d91a7cc267d3d91ade0e0bc166f33fe1c601e75",
+    "https://photo-inbox.github.io/web/styles.d264ca6879d7813d.css": "bdf6b4916c1d20b60808390524a2ed0273df6ab4"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}
