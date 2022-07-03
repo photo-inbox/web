@@ -6,9 +6,9 @@ import { ItemsState } from './items';
 import { I18nDto } from '@photo-inbox/dtos';
 import { SetI18n } from './app.actions';
 import { Observable, of, switchMap, tap } from 'rxjs';
-import { AppService } from './app.service';
 import { TranslateService } from '@ngx-translate/core';
 import { map } from 'rxjs/operators';
+import { I18nService } from './i18n';
 
 @State<AppStateModel>({
   name: 'app',
@@ -28,7 +28,7 @@ export class AppState implements NgxsOnInit {
   }
 
   constructor(
-    private readonly service: AppService,
+    private readonly i18nService: I18nService,
     private readonly translate: TranslateService,
   ) {}
 
@@ -40,7 +40,7 @@ export class AppState implements NgxsOnInit {
   setI18n(ctx: StateContext<AppStateModel>): Observable<any> {
     return of(ctx.getState()).pipe(
       map(({ lang }) => lang),
-      switchMap((lang) => this.service.getI18nByLang(lang)),
+      switchMap((lang) => this.i18nService.getI18nByLang(lang)),
       tap(({ lang }) => this.translate.use(lang)),
       tap((i18n) => ctx.patchState({ i18n })),
       tap(({ lang, document }) =>
