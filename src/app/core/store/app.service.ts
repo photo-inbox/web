@@ -1,20 +1,16 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { ItemDto } from '@photo-inbox/dtos';
 import { environment } from '../../../environments/environment';
+import { I18nDto } from '@photo-inbox/dtos';
 
 @Injectable({
   providedIn: 'root',
 })
-export class ItemsService {
-  private readonly endpointPrefix: string = 'items';
-
+export class AppService {
   constructor(private readonly http: HttpClient) {}
 
-  getItems(): Observable<ItemDto[]> {
-    return this.http.get<ItemDto[]>(
-      `${environment.apiPrefix}/${this.endpointPrefix}`,
-    );
+  getI18nByLang(lang: string): Observable<I18nDto> {
+    return this.http.get<I18nDto>(`${environment.apiPrefix}/i18n/${lang}`);
   }
 }

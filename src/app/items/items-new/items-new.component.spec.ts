@@ -1,17 +1,17 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ItemPreviewComponent } from './item-preview.component';
+import { ItemsNewComponent } from './items-new.component';
 
-describe('ItemComponent', () => {
-  let component: ItemPreviewComponent;
-  let fixture: ComponentFixture<ItemPreviewComponent>;
+describe('ItemNewDialogComponent', () => {
+  let component: ItemsNewComponent;
+  let fixture: ComponentFixture<ItemsNewComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ItemPreviewComponent],
+      declarations: [ItemsNewComponent],
     }).compileComponents();
 
-    fixture = TestBed.createComponent(ItemPreviewComponent);
+    fixture = TestBed.createComponent(ItemsNewComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -2,20 +2,28 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ItemsRoutingModule } from './items-routing.module';
 import { ItemsComponent } from './items.component';
-import { ItemPreviewComponent } from './item-preview/item-preview.component';
+import { ItemsListPreviewComponent } from './items-list/items-list-preview/items-list-preview.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { TranslateModule } from '@ngx-translate/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
-import { ItemDialogComponent } from './item-dialog/item-dialog.component';
+import { ItemsDetailsComponent } from './items-details/items-details.component';
 import { DefaultLayoutModule } from '../shared';
+import { ItemsNewComponent } from './items-new/items-new.component';
+import { ItemsListComponent } from './items-list/items-list.component';
 
 @NgModule({
-  declarations: [ItemsComponent, ItemPreviewComponent, ItemDialogComponent],
+  declarations: [
+    ItemsComponent,
+    ItemsListPreviewComponent,
+    ItemsDetailsComponent,
+    ItemsNewComponent,
+    ItemsListComponent,
+  ],
   imports: [
     CommonModule,
     ItemsRoutingModule,
-    DefaultLayoutModule.forFeature(ItemDialogComponent),
+    DefaultLayoutModule.forFeature(ItemsNewComponent),
     MatToolbarModule,
     TranslateModule,
     MatButtonModule,

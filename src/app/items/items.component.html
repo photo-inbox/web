@@ -1,12 +1,3 @@
 <app-default-layout>
-  <!-- TODO make one united grid -->
-  <div class='wrapper'>
-    <mat-toolbar>{{ 'items.title' | translate }}</mat-toolbar>
-
-    <div class='grid'>
-      <app-item-preview *ngFor='let item of items$ | async'
-                        [item]='item'>
-      </app-item-preview>
-    </div>
-  </div>
+  <router-outlet></router-outlet>
 </app-default-layout>

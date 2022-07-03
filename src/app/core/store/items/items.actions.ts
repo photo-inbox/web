@@ -1,3 +1,3 @@
 export class GetItems {
-  public static readonly type = '[Items] Get items';
+  public static readonly type = '[Items] Get Items';
 }

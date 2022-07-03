@@ -1,3 +1,3 @@
-export * from './api';
-export * from './providers';
 export * from './store';
+
+export * from './title-strategy.service';
