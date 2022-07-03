@@ -7,7 +7,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { TranslateModule } from '@ngx-translate/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
-import { ItemsDetailsComponent } from './items-details/items-details.component';
+import { ItemsListDetailsComponent } from './items-list/items-list-details/items-list-details.component';
 import { DefaultLayoutModule } from '../shared';
 import { ItemsNewComponent } from './items-new/items-new.component';
 import { ItemsListComponent } from './items-list/items-list.component';
@@ -16,7 +16,7 @@ import { ItemsListComponent } from './items-list/items-list.component';
   declarations: [
     ItemsComponent,
     ItemsListPreviewComponent,
-    ItemsDetailsComponent,
+    ItemsListDetailsComponent,
     ItemsNewComponent,
     ItemsListComponent,
   ],

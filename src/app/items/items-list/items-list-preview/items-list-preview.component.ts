@@ -2,9 +2,9 @@ import { Component, HostListener, Input } from '@angular/core';
 import { ItemDto } from '@photo-inbox/dtos';
 import { MatDialog } from '@angular/material/dialog';
 import {
-  ItemsDetailsComponent,
   ItemsDetailsComponentData,
-} from '../../items-details/items-details.component';
+  ItemsListDetailsComponent,
+} from '../items-list-details/items-list-details.component';
 
 @Component({
   selector: 'app-items-list-preview',
@@ -18,10 +18,10 @@ export class ItemsListPreviewComponent {
 
   @HostListener('click')
   onClick() {
-    this.matDialog.open<ItemsDetailsComponent, ItemsDetailsComponentData>(
-      ItemsDetailsComponent,
+    this.matDialog.open<ItemsListDetailsComponent, ItemsDetailsComponentData>(
+      ItemsListDetailsComponent,
       {
-        data: { id: this.item.id },
+        data: { item: this.item },
       },
     );
   }
