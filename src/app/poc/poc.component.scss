@@ -1,0 +1,14 @@
+@use 'sass:map';
+@use '@angular/material' as mat;
+@use '../../assets/scss/abstract/variables' as var;
+
+:host {
+  $config: mat.get-color-config(var.$web-theme);
+  $background: map.get($config, background);
+
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  width: 100vw;
+  background-color: mat.get-color-from-palette($background, background);
+}

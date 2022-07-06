@@ -1,0 +1,15 @@
+@use '../../../assets/scss/abstract/variables' as var;
+
+
+:host {
+  position: fixed;
+  bottom: var.$gap;
+  left: var.$gap;
+  right: var.$gap;
+}
+
+mat-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

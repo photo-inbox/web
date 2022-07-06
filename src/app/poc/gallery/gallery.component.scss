@@ -1,0 +1,64 @@
+@use 'sass:map';
+@use '@angular/material' as mat;
+@use '../../../assets/scss/abstract/variables' as var;
+
+$config: mat.get-color-config(var.$web-theme);
+
+$gap: calc(#{var.$gap} / 2);
+
+:host {
+  flex: 1;
+  align-self: flex-start;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  row-gap: $gap;
+  background-color: inherit;
+}
+
+.container {
+  $columns: 3;
+
+  width: calc((100% - ($columns - 1) * $gap) / $columns);
+  position: relative;
+
+  &:nth-child(#{$columns}n+#{$columns - 1}) {
+    margin: 0 $gap;
+  }
+}
+
+.overlay {
+  $foreground: map.get($config, foreground);
+
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: mat.get-color-from-palette($foreground, disabled-button);
+}
+
+.completed-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.label-chip {
+  $primary: map.get(var.$web-theme, primary);
+
+  position: absolute;
+  top: 8px;
+  left: 0;
+
+  box-sizing: border-box;
+  padding: 1px 8px 1px 4px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: mat.get-color-from-palette($primary);
+  border-left-width: 0;
+  border-top-right-radius: 25% 50%;
+  border-bottom-right-radius: 25% 50%;
+
+  color: mat.get-color-from-palette($primary);
+}

@@ -1,0 +1,25 @@
+<img [src]="item?.imageSrc" />
+
+<app-toolbar>
+  <mat-form-field>
+    <mat-label>Label</mat-label>
+    <input
+      type="text"
+      placeholder="Pick one"
+      matInput
+      [formControl]="labelCtrl"
+      [matAutocomplete]="auto"
+    />
+    <mat-autocomplete autoActiveFirstOption #auto="matAutocomplete">
+      <mat-option *ngFor="let option of labelOptions" [value]="option">
+        {{ option }}
+      </mat-option>
+    </mat-autocomplete>
+  </mat-form-field>
+
+  <button mat-icon-button (click)="toggleComplete()">
+    <mat-icon>
+      {{ item?.isCompleted ? 'check_circle' : 'check_circle_outline' }}
+    </mat-icon>
+  </button>
+</app-toolbar>

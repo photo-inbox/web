@@ -1,0 +1,13 @@
+<video #videoElement [srcObject]="videoStream$ | async" autoplay></video>
+
+<canvas #canvasElement></canvas>
+
+<app-squared-image
+  [src]="item?.imageSrc"
+  rounded
+  [routerLink]="['..', PocRoute.gallery]"
+></app-squared-image>
+
+<button class="shot-button" mat-fab color="warn" (click)="makePhoto()">
+  <mat-icon>camera</mat-icon>
+</button>

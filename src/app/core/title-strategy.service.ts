@@ -12,7 +12,7 @@ export class TitleStrategyService extends TitleStrategy {
   }
 
   override updateTitle(routerState: RouterStateSnapshot): void {
-    const title = this.buildTitle(routerState) ?? 'title.default';
+    const title = this.buildTitle(routerState) ?? 'default';
 
     this.translate
       .get(`title.${title}`)

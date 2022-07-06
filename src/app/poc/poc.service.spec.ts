@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 
-import { I18nService } from './i18n.service';
+import { PocService } from './poc.service';
 
-describe('I18nService', () => {
-  let service: I18nService;
+describe('PocService', () => {
+  let service: PocService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(I18nService);
+    service = TestBed.inject(PocService);
   });
 
   it('should be created', () => {

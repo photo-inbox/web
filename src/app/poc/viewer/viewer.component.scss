@@ -1,0 +1,11 @@
+:host {
+  flex: 1;
+  position: relative;
+  display: flex;
+  background-color: inherit;
+}
+
+img {
+  width: 100%;
+  object-fit: contain;
+}

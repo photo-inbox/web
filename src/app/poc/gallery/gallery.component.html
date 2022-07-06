@@ -1,0 +1,29 @@
+<div *ngFor="let item of items" [routerLink]="'' + item.id" class="container">
+  <app-squared-image [src]="item.imageSrc"></app-squared-image>
+
+  <div *ngIf="item.isCompleted" class="overlay"></div>
+
+  <div *ngIf="item.label" class="label-chip">
+    <span class="mat-caption">{{ item.label }}</span>
+  </div>
+
+  <button
+    class="completed-button"
+    mat-icon-button
+    color="primary"
+    (click)="toggleComplete(item.id); $event.stopPropagation()"
+  >
+    <mat-icon>
+      {{ item.isCompleted ? 'check_circle' : 'check_circle_outline' }}
+    </mat-icon>
+  </button>
+</div>
+
+<app-toolbar [menu]="menu"></app-toolbar>
+
+<mat-menu #menu>
+  <button mat-menu-item (click)="clearCompleted()">
+    <mat-icon>delete</mat-icon>
+    <span>Clear Completed</span>
+  </button>
+</mat-menu>

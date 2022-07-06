@@ -2,9 +2,14 @@
 // `ng build` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
 
+import { Feature } from '../app/shared';
+
 export const environment = {
   production: false,
   apiPrefix: 'api',
+  features: {
+    items: true,
+  } as Record<Feature, boolean>,
 };
 
 /*
