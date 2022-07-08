@@ -22,6 +22,7 @@ import {
 } from './core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { ServiceWorkerModule } from '@angular/service-worker';
 
 @NgModule({
   declarations: [AppComponent],
@@ -49,6 +50,12 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
     }),
     AppRoutingModule,
     MatSnackBarModule,
+    ServiceWorkerModule.register('ngsw-worker.js', {
+      enabled: environment.production,
+      // Register the ServiceWorker as soon as the application is stable
+      // or after 30 seconds (whichever comes first).
+      registrationStrategy: 'registerWhenStable:30000',
+    }),
   ],
   providers: [
     {
