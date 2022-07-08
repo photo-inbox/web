@@ -6,6 +6,7 @@
     "start": "ng serve",
     "start:pwa": "http-server -p 8080 -c-1 dist/web",
     "build": "ng build",
+    "build:gh-pages": "ng build --base-href https://photo-inbox.github.io/web/",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "lint": "ng lint",
