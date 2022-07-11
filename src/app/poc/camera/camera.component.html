@@ -1,4 +1,9 @@
-<video #videoElement [srcObject]="videoStream$ | async" autoplay></video>
+<video
+  #videoElement
+  [srcObject]="videoStream$ | async"
+  autoplay
+  playsinline
+></video>
 
 <canvas #canvasElement></canvas>
 
